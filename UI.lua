@@ -626,10 +626,10 @@
                 });
                 
                 items[ "shadow" ] = library:create( "ImageLabel" , {
-                    ImageColor3 = rgb(0, 0, 0);
+                    ImageColor3 = rgb(255, 0, 0);
                     ScaleType = Enum.ScaleType.Slice;
                     Parent = items[ "main" ];
-                    BorderColor3 = rgb(0, 0, 0);
+                    BorderColor3 = rgb(255, 0, 0);
                     Name = "\0";
                     BackgroundColor3 = rgb(255, 255, 255);
                     Size = dim2(1, 75, 1, 75);
