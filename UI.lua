@@ -3550,6 +3550,9 @@
         function library:init_config(window) 
             window:seperator({name = "Settings"})
             local main = window:tab({name = "Configs", tabs = {"Main"}})
+
+            window:seperator({name = "General"})
+            local main = window:tab({name = "Logs", tabs = {"Main"}})
             
             local column = main:column({})
             local section = column:section({name = "Configs", size = 1, default = true, icon = "rbxassetid://139628202576511"})
