@@ -3548,11 +3548,27 @@
         end 
 
         function library:init_config(window) 
+		window:seperator({name = "General"})
+		local logs_tab = window:tab({name = "Logs"})
+
+		local current_date = os.date("%m/%d/%Y")
+
+		local random_updates = {
+    		"• Fixed some UI issues causing lag.",
+    		"• Updated the ESP feature for better accuracy.",
+    		"• Tweaked the aim assist functionality.",
+    		"• Improved performance on low-end devices.",
+    		"• Added new customization options for appearance."
+		}
+
+			local update_text = table.concat(random_updates, "\n")
+
+			local logs_column = logs_tab:column({})
+			local logs_section = logs_column:section({name = current_date, default = true})
+			logs_section:label({name = "", info = update_text})  -- Empty name here to avoid displaying date again
+
             window:seperator({name = "Settings"})
             local main = window:tab({name = "Configs", tabs = {"Main"}})
-
-            window:seperator({name = "General"})
-            local general = window:tab({name = "Logs", tabs = {"Main"}})
             
             local column = main:column({})
             local section = column:section({name = "Configs", size = 1, default = true, icon = "rbxassetid://139628202576511"})
