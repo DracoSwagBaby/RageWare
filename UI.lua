@@ -1,7 +1,10 @@
 --[[
 
     RageWare Library
-    
+    Version: 1.0
+    Author: RageWare
+    Date: 10/14/2025
+
 ]]
 
 -- Variables 
@@ -80,7 +83,7 @@
 
     local themes = {
         preset = {
-            accent = rgb(255, 0, 0),
+            accent = rgb(155, 150, 219),
         }, 
 
         utility = {
@@ -626,10 +629,10 @@
                 });
                 
                 items[ "shadow" ] = library:create( "ImageLabel" , {
-                    ImageColor3 = rgb(255, 0, 0);
+                    ImageColor3 = rgb(0, 0, 0);
                     ScaleType = Enum.ScaleType.Slice;
                     Parent = items[ "main" ];
-                    BorderColor3 = rgb(255, 0, 0);
+                    BorderColor3 = rgb(0, 0, 0);
                     Name = "\0";
                     BackgroundColor3 = rgb(255, 255, 255);
                     Size = dim2(1, 75, 1, 75);
@@ -3547,8 +3550,7 @@
             return setmetatable(cfg, library)
         end 
 
-        	function library:init_config(window)
-
+        function library:init_config(window) 
             window:seperator({name = "Settings"})
             local main = window:tab({name = "Configs", tabs = {"Main"}})
             
