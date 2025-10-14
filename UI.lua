@@ -3549,9 +3549,6 @@
 
         	function library:init_config(window)
 
-			window:seperator({name = "General"})
-			local logs_tab = window:tab({name = "Logs"})
-
             window:seperator({name = "Settings"})
             local main = window:tab({name = "Configs", tabs = {"Main"}})
             
