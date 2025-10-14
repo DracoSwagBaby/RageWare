@@ -1,9 +1,7 @@
 --[[
 
-    Milenium Library
-    -> Made by @finobe 
-    -> Kind of got bored idk what to do with life
-    -> Idk who or why this got leaked, ui was VERY popular and high in demand with customers
+    RageWare Library
+    
 ]]
 
 -- Variables 
@@ -82,7 +80,7 @@
 
     local themes = {
         preset = {
-            accent = rgb(155, 150, 219),
+            accent = rgb(255, 0, 0),
         }, 
 
         utility = {
